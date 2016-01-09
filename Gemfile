@@ -15,6 +15,12 @@ group :production do
 	gem 'rails_12factor'
 end
 
+group :test do 
+	gem 'shoulda'
+	gem 'guard-minitest'
+	gem 'minitest-reporters'
+	gem 'mini_backtrace'
+end
 
 group :development, :test do
   gem 'byebug'
