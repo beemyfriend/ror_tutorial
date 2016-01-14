@@ -1,0 +1,9 @@
+<p>
+	O'Hey <%= @user.name %>!
+</p>
+
+<p>
+  You're almost ready to use the fully featured O'Hey! app. Please activate your account by clicking on the link below:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
